@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0px;
+  top: 0px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1440px) {
+  body {
+    min-height: 100vh;
+  }
+}
+
+body > figure,
+img {
+  width: 100%;
+}
+
+body > figure:first-of-type {
+  position: absolute;
+  top: 0px;
+}
+
+@media (min-width: 1440px) {
+  body > figure:first-of-type {
+    width: 520px;
+    top: 0px;
+  }
+}
+
+body > figure:last-of-type {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  body > figure:last-of-type {
+    position: absolute;
+    display: inline;
+    width: 400px;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
+    height: 400px;
+  }
+}
+
+#PrincipalContent {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  min-width: 200px;
+  width: 90%;
+  max-width: 500px;
+  padding: 80px 0px 80px 0px;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+}
+
+@media (min-width: 576px) {
+  #PrincipalContent {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 992px) {
+  #PrincipalContent {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #PrincipalContent {
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    min-width: 1200px;
+    display: grid;
+    grid-template-areas:
+      "id1 id2"
+      "id3 id3";
+    grid-template-columns: minmax(auto, 2fr) minmax(auto, 2fr);
+  }
+
+  .GridItemDesk1 {
+    grid-area: id1;
+  }
+
+  .GridItemDesk2 {
+    grid-area: id2;
+  }
+
+  .GridItemDesk3 {
+    grid-area: id3;
+  }
+}
+
+#FirstSection {
+  padding: 0px 20px 0px 20px;
+}
+
+@media (min-width: 1440px) {
+  #FirstSection {
+    padding: 0px;
+  }
+}
+
+#FirstSection header h1 {
+  margin-bottom: 35px;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #502050;
+}
+
+@media (min-width: 1440px) {
+  #FirstSection header h1 {
+    padding: 0px 200px 0px 0px;
+    text-align: left;
+    margin-bottom: 35px;
+    font-size: 3rem;
+  }
+}
+
+#FirstSection header p {
+  line-height: 22px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0px 8px;
+  color: #937b92;
+}
+
+@media (min-width: 1440px) {
+  #FirstSection header p {
+    padding: 0px 80px 0px 0px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 1.3rem;
+  }
+}
+
+#SecondSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 20px 0px 20px;
+}
+
+@media (min-width: 1440px) {
+  #SecondSection {
+    align-items: flex-start;
+    gap: 25px;
+    padding: 0px;
+  }
+}
+
+#SecondSection div {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f7f2f7;
+}
+
+@media (min-width: 1440px) {
+  #SecondSection div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1440px) {
+  #SecondSection div:nth-child(2) {
+    margin-left: 50px;
+  }
+
+  #SecondSection div:last-of-type {
+    margin-left: 100px;
+  }
+}
+
+#SecondSection figure {
+  display: grid;
+  grid-template-columns: repeat(5, 15px);
+  gap: 10px;
+  justify-content: center;
+  margin: 0px 20px 20px 20px;
+}
+
+@media (min-width: 1440px) {
+  #SecondSection figure {
+    margin: 0;
+  }
+}
+
+#SecondSection article {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #502050;
+}
+
+#ThirdSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 20px 0px 20px;
+}
+
+@media (min-width: 1440px) {
+  #ThirdSection {
+    flex-direction: row;
+    gap: 20px;
+    padding: 0px;
+  }
+}
+
+#ThirdSection div {
+  display: grid;
+  grid-template-areas:
+    "i1 i2"
+    "i3 i3";
+  grid-template-columns: minmax(auto, 1fr) minmax(auto, 3fr);
+  gap: 20px 0px;
+  padding: 28px;
+  border-radius: 10px;
+  background-color: #502050;
+  color: #ffffff;
+}
+
+@media (min-width: 1440px) {
+  #ThirdSection div {
+    height: 250px;
+    padding: 30px 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #ThirdSection div:nth-child(2) {
+    margin-top: 15px;
+  }
+
+  #ThirdSection div:last-child {
+    margin-top: 30px;
+  }
+}
+
+.GridItem1 {
+  grid-area: i1;
+}
+
+.GridItem2 {
+  justify-self: flex-start;
+  align-self: center;
+  grid-area: i2;
+}
+
+.GridItem2 h2 {
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.GridItem2 p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #ee68a4;
+}
+
+.GridItem3 {
+  text-align: left;
+  line-height: 25px;
+  font-size: 1.2rem;
+  grid-area: i3;
+}
+
+@media (min-width: 1440px) {
+  .GridItem3 {
+    text-align: left;
+    line-height: 25px;
+    font-size: 1.1rem;
+  }
+}
+
+.ClientPicture {
+  width: 45px;
+  border-radius: 100%;
+}
